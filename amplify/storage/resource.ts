@@ -13,9 +13,9 @@ export const storage = defineStorage({
 
 
 export const secondaryStorage = defineStorage({
-  name: 'mySecondaryStorageBucket',
+  name: 'ixiCaptionStorageBucket',
    access: (allow) => ({
-    'backup_public/*': [
+    'uploads/*': [
         allow.guest.to(['read', 'write']),
         allow.authenticated.to(['read', 'write', 'delete']),
     ]
