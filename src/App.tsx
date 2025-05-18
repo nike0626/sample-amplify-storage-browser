@@ -20,7 +20,7 @@ function App() {
       {({ signOut, user }) => (
         <>
           <div className="header">
-            <h1>{`Hello ${user?.username}`}</h1>
+            <h1>{`환영합니다. ${user?.attributes.email}`} 디지털 대성의 동영상 강의 업로드 페이지 입니다.</h1>
             <Button onClick={signOut}>Sign out</Button>
           </div>
           <StorageBrowser />
