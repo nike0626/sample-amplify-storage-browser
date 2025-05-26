@@ -11,7 +11,6 @@ export const storage = defineStorage({
    })
 });
 
-
 export const secondaryStorage = defineStorage({
   name: 'ixiCaptionStorageBucket',
    access: (allow) => ({
